@@ -10,11 +10,11 @@ pub fn read_num_input(input_phrase: String, error_phrase: String) -> i32 {
             .read_line(&mut input)
             .expect("Couldn't read input!");
 
-        let input: i32 = match input.trim().parse() {
+        match input.trim().parse() {
             Ok(n) => break n,
             Err(_) => {println!("{}", error_phrase);
             continue;}
-        };
+        }
 
 
     }
@@ -30,13 +30,14 @@ pub fn read_string_input(input_phrase: String, error_phrase: String) -> String {
             .read_line(&mut input)
             .expect("Couldn't read input!");
 
-        let input: String = match input.trim().parse() {
+        match input.trim().parse() {
             Ok(n) => break n,
             Err(_) => {println!("{}", error_phrase);
                 continue;}
-        };
+        }
 
 
     }
+
 
 }

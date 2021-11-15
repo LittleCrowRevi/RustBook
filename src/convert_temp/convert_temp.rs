@@ -7,7 +7,7 @@ pub fn convert() {
 
     println!("What would you like to convert? F or C? ");
 
-    let mut type_convert = input_util::read_string_input(
+    let type_convert = input_util::read_string_input(
         "Type F or C! ".parse().unwrap(),
         "Please input a temp type!".parse().unwrap());
 
@@ -23,7 +23,7 @@ pub fn convert() {
 
 fn convert_to_celsius() {
 
-    let mut temperature = input_util::read_num_input(
+    let temperature = input_util::read_num_input(
         "Please input the temp you'd like to convert!".parse().unwrap(),
         "Input a number!".parse().unwrap());
 
