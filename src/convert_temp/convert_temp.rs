@@ -8,8 +8,8 @@ pub fn convert() {
     println!("What would you like to convert? F or C? ");
 
     let type_convert = input_util::read_string_input(
-        "Type F or C! ".parse().unwrap(),
-        "Please input a temp type!".parse().unwrap());
+        String::from("Type C or F!"),
+        String::from("Please type a letter!"));
 
         if type_convert.to_uppercase() == "F" {
             println!("Converting to Fahrenheit!");
@@ -24,8 +24,8 @@ pub fn convert() {
 fn convert_to_celsius() {
 
     let temperature = input_util::read_num_input(
-        "Please input the temp you'd like to convert!".parse().unwrap(),
-        "Input a number!".parse().unwrap());
+        String::from("Please input the temp you'd like to convert!"),
+        String::from("Type a number!"));
 
-    println!("{}", (temperature - 32) * 5/9)
+    println!("{}°C", (temperature - 32) * 5/9)
 }
