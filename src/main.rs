@@ -12,7 +12,7 @@ mod minigrep;
 #[tokio::main]
 async fn main() {
 
-    match miu_reqwest::reqwest_01::reqwest_miu(String::from("https://api.manabot.fun/quotes/1")).await {
+    /* match miu_reqwest::reqwest_01::reqwest_miu(String::from("https://api.manabot.fun/quotes/1")).await {
       Ok(o) => println!("{}", o),
         Err(e) => println!("{:?}", e)
     };
@@ -45,9 +45,9 @@ async fn main() {
 
     println!("{:?}", map);
 
-    notes::traits::traits();
+    notes::traits::traits(); */
 
-    notes::traits_lifetimes::ann();
+    // notes::traits_lifetimes::ann();
 
     minigrep::minigrep::minigrep()
 }

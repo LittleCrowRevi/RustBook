@@ -22,7 +22,7 @@ pub fn ann() {
     let string2 = "xyz";
 
     let ann = loop {
-        match read_input(String::from("Inout an announcement!")).trim().parse::<i32>() {
+        match read_input(String::from("Input an announcement!")).trim().parse::<i32>() {
             Ok(a) => break a,
             Err(e) => dbg!("PanicPanic!{}", e)
         };
