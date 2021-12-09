@@ -8,6 +8,7 @@ mod enums;
 mod miu_reqwest;
 mod notes;
 mod minigrep;
+mod functional;
 
 #[tokio::main]
 async fn main() {
@@ -49,5 +50,12 @@ async fn main() {
 
     // notes::traits_lifetimes::ann();
 
-    minigrep::minigrep::minigrep()
+    // minigrep::minigrep::minigrep()
+
+    let simulated_user_specified_value = 10;
+    let simulated_random_number = 7;
+
+    functional::closures::generate_workout(simulated_user_specified_value, simulated_random_number);
+
+
 }

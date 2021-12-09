@@ -88,4 +88,5 @@ mod tests {
             search_case_insensitive(query, contents)
         );
     }
+
 }
