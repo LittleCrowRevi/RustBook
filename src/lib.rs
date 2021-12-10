@@ -55,12 +55,9 @@ pub fn search_case_insensitive<'a>(
     let query = query.to_lowercase();
     contents.
         lines()
-        .filter(|line| line.to_lowercase().contains(query))
+        .filter(|line| line.to_lowercase().contains(&query))
         .collect()
     }
-
-    results
-}
 
 #[cfg(test)]
 mod tests {

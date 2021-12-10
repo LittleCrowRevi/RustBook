@@ -9,7 +9,6 @@ mod miu_reqwest;
 mod notes;
 mod minigrep;
 mod functional;
-
 #[tokio::main]
 async fn main() {
 
